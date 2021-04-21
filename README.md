@@ -7,3 +7,7 @@ This theme skins Chaturbate with a dark, somewhat vivid theme. I try making navi
 
 <b>FUTURE PLANS</b><br />
 Styling profile pages
+
+
+<b>NOTE</b><br />
+I have only tested this with Edge Chromium. Let me know if you have any issues with it on other browsers.

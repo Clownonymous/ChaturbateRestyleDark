@@ -13,11 +13,6 @@
 // @run-at       document-end
 // ==/UserScript==
 
-
-if (window.location.protocol != 'https:') {
-    window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
-
 function clownStyle(css) {
     var head, style;
     head = document.getElementsByTagName('head')[0];

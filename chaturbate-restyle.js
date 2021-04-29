@@ -2,18 +2,25 @@
 // @name        Chaturbate Restyle
 // @namespace   https://clownonymous.com/
 // @author      Clown
-// @description Restyle and ad remove for Chaturbate.
+// @description Restyle and ad removal for Chaturbate.
 // @include     https://chaturbate.com/*
 // @include     https://*.chaturbate.com/*
-// @include     http://chaturbate.com/*
-// @include     http://*.chaturbate.com/*
+// @exclude     https://chaturbate.com/emoticons/*
+// @exclude     https://chaturbate.com/accounts/*
+// @exclude     https://chaturbate.com/apps/*
+// @exclude     https://chaturbate.com/photo_videos/*
 // @version     1.1
-// @run-at document-start
+// @run-at       document-end
 // ==/UserScript==
 
-function colorfulstyle2(css) {
+
+if (window.location.protocol != 'https:') {
+    window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+
+function clownStyle(css) {
     var head, style;
-    head = document.getElementsByTagName('html')[0];
+    head = document.getElementsByTagName('head')[0];
     if (!head) { return; }
     style = document.createElement('style');
     style.type = 'text/css';
@@ -21,21 +28,21 @@ function colorfulstyle2(css) {
     head.appendChild(style);
 }
 
-colorfulstyle2(
+clownStyle(
 
 // ----------BODY/TOP MENU/OTHER----------
   
 // GLOBAL
 'p {color:#fff;}' +
+'#header .ad {display:none!important;}' +
 
 // HTML & BODY
-'html {background:#000000 !important; color:#050505; font:62.5%/1  !important; height:100%; padding:0;}' +
 'html body div#header div.section{background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(3, 3, 3), rgb(6, 6, 6), rgb(8, 9, 9), rgb(11, 12, 12), rgb(14, 15, 15), rgb(17, 17, 18), rgb(20, 20, 21), rgb(23, 23, 24), rgb(25, 26, 27), rgb(28, 29, 30), rgb(31, 32, 33)) !important;}' +
 'html > body {background-image: linear-gradient(to bottom, rgb(33, 33, 33), rgb(33, 33, 33), rgb(33, 33, 33), rgb(32, 33, 33), rgb(32, 33, 33), rgb(32, 33, 33), rgb(32, 32, 33), rgb(32, 32, 33), rgb(32, 32, 33), rgb(31, 32, 33), rgb(31, 32, 33), rgb(31, 32, 33)) !important;}' +
-'#header {background: #020202 !important; width: 100%;}' +
 
 // LOGO
 'strong {color:#fff !important;}' +
+//'.logo-zone {cursor:default !important; pointer-events:none !important; background-image: url(https://github.com/Clownonymous/ChaturbateRestyleDark/blob/main/Chaturbate_white.png) no-repeat !important;}' +
 
 // USER ACCOUNT PANEL
 '#header #user_information {background:#222 !important; border:0 !important;}' +

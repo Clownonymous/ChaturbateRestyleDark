@@ -13,6 +13,11 @@
 // @run-at       document-end
 // ==/UserScript==
 
+
+if (window.location.protocol != 'https:') {
+    window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+
 function clownStyle(css) {
     var head, style;
     head = document.getElementsByTagName('head')[0];
@@ -43,7 +48,7 @@ clownStyle(
 '#header #user_information {background:#222 !important; border:0 !important;}' +
 '#user_information .user_information_header {background:transparent !important;}' +
 '#user_information .bottom {background:transparent !important;}' +
-'#user_information table td, tr {color:#fff !important;}' +
+'.bottom tr {color:#fff !important;}' +
 '#user_information a {color:#0d7e9f !important;}' +
 
 // NAVIGATION
@@ -64,7 +69,7 @@ clownStyle(
 '.sub-nav a:hover {background: #000 !important; color: #bababa !important;}' +
 '.sub-nav a {background: #000000 !important; box-shadow: 1px 3px 4px 1px #C4A507; font-family: Century Gothic, sans-serif !important; font-size: 12px; padding: 5px 11px 4px;}' +
 '.sub-nav li {float: left; margin: 0 12px 0 0 !important;}' +
-'.sub_navigation {color: #FFF;}' +
+'.sub_navigation {color:#fff;}' +
 
 // ---------------------------------------
 

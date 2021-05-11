@@ -35,6 +35,7 @@ clownStyle(
 // GLOBAL
 'p {color:#fff;}' +
 '#header .ad {display:none!important;}' +
+'.message {background-color:#909090 !important;}' +
 
 // HTML & BODY
 'html body div#header div.section{background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(3, 3, 3), rgb(6, 6, 6), rgb(8, 9, 9), rgb(11, 12, 12), rgb(14, 15, 15), rgb(17, 17, 18), rgb(20, 20, 21), rgb(23, 23, 24), rgb(25, 26, 27), rgb(28, 29, 30), rgb(31, 32, 33)) !important;}' +
@@ -50,6 +51,8 @@ clownStyle(
 '#user_information .bottom {background:transparent !important;}' +
 '.bottom tr {color:#fff !important;}' +
 '#user_information a {color:#0d7e9f !important;}' +
+'#userInfoPanelMenuDropdownRoot a {color:#fff !important;}' +
+'#UserMenuDropDown {background-color:#000 !important;}' +
 
 // NAVIGATION
 '.creat {background:transparent !important;}' +

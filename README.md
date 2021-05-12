@@ -1,5 +1,5 @@
 # ChaturbateRestyle
-A dark theme for Chaturbate.
+A dark theme for Chaturbate. If you pair this with the official "Dark Mode" setting it makes it much more relaxing and better looking.
 
 I will keep this script updated in my free time. Also feel free to modify it and make your own changes.
 

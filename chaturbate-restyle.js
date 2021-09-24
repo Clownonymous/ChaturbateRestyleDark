@@ -52,6 +52,8 @@ clownStyle(
 '#user_information .bottom {background:transparent !important;}' +
 '.bottom tr {color:#fff !important;}' +
 '#user_information a {color:#0d7e9f !important;}' +
+  
+// ---------------------------------------
 
 // NAVIGATION
 '.creat {background:transparent !important;}' +
@@ -60,11 +62,8 @@ clownStyle(
 '.nav-bar {background:transparent !important; border:0 !important; padding:10px !important; font-size:13px; font-family: Consolas, Baskerville, Segoe UI, sans-serif;}' +
 'div.nav-bar ul#nav li a.login-link {visibility:visible !important;}' +
   
-// TAB MENU
-'.top-section {background: transparent !important; border:0px !important; margin-top:20px !important;}' +
-'.top-section .advanced_search_button_shell .advanced_search_button {visibility:hidden !important;}' +
-'.top-section .search_svg {left:30px !important;}' +
-
+// ---------------------------------------
+  
 // SUB NAVIGATION
 '.sub-nav {display: inline-block; font: 0.8666em/16px,Arial,Helvetica,sans-serif; height: 1%; list-style: none outside none; margin-left:55px !important; min-width: 690px; overflow: hidden; padding: 0px; position: relative; top: 3px;}' +
 '.sub-nav a, .active a  {background: #000 !important; color: #888;}' +
@@ -79,9 +78,9 @@ clownStyle(
 '.advanced_search_button {float:left !important; color:#fff !important; right:0 !important;}' +
 'div.content h2 {color:#fff !important;}' +
 '.gender-tab a, .sub-nav li>a {color:#fff !important; border:0 !important;}' +
-'div.content div.advanced_search_options {background-color:#000; width:95% !important; height: 175px !important; margin:auto !important; padding: 5px 2.5px 1.5px !important; border: none !important; color: #9F9F9F !important;}' +
+'div.content div.advanced_search_options {background-color:#000; width:100% !important; height: 175px !important; margin:auto !important; padding: 5px 2.5px 1.5px !important; border: none !important; color: #9F9F9F !important;}' +
 'div.content div.advanced_search_options form .button {background: #E5E2E2 !important; border: 1px solid #E5E2E2 ;box-shadow: 0px 0px 5px 2px rgba(119, 119, 119, 0.3);-moz-box-shadow: 0px 0px 5px 2px rgba(119, 119, 119, 0.3);-webkit-box-shadow: 0px 0px 5px 2px rgba(119, 119, 119, 0.3);}' +
-'div.advanced_search_options table tbody tr td.search form input[type="text"] {background: none repeat scroll 0 0 #E456D5 !important; border: 1px solid #B1B1B1;height: 20px; line-height: 25px; margin-top: 4px; padding: 2px 4px; width: 150px !important; box-shadow: inset 2px 2px 2px 1px #8E0C81 !important; border-radius: 25px !important;}' +
+'div.advanced_search_options table tbody tr td.search form input[type="text"] {background: none repeat scroll 0 0 #E456D5 !important; border: 0px solid #B1B1B1;height: 20px; line-height: 25px; margin-top: 4px; padding: 2px 4px; width: 150px !important; box-shadow: inset 2px 2px 2px 1px #8E0C81 !important; border-radius: 25px !important;}' +
 '#advanced_search_options label {color:#0d7e9f; font-size:13px; font-family: Consolas, Baskerville, Segoe UI, sans-serif;}' +
 // ---------------------------------------
   
@@ -110,6 +109,8 @@ clownStyle(
 // ------------------------------------
   
 // ---------PAGINATION---------
+'.paging .prev {border:0px !important; padding:5px !important;}' +
+'.paging .endless_page_link {border:0px !important; padding:5px !important;}' +
 '.paging {border:0px !important; padding:15px !important;}' +
 '.paging a {border:0px !important; padding:2px !important; font-size:15px !important;}' +
 // ----------------------------
@@ -138,7 +139,8 @@ clownStyle(
 // --------------------------------
   
 // ----------DISCOVER PAGE----------
- 
+
+  
 // --------------------------------
 
 // ----------FOOTER AND REMOVE ADS----------
